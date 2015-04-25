@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Tweet.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.tweet  = [[Tweet alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,5 +27,8 @@
 }
 
 - (IBAction)tweetAction:(id)sender {
+    self.tweet.tweetBody = self.viewTweetBody.text;
+    NSString *result = [[NSString alloc] initWithFormat:@"Enviaste %li caracteres", (long)self.tweet.numberOfCharacters];
+    self.label.text = result;
 }
 @end
