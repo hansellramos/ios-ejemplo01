@@ -14,6 +14,7 @@
 		96E358831AEBF0EF00BCE633 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E358821AEBF0EF00BCE633 /* Images.xcassets */; };
 		96E358861AEBF0F000BCE633 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E358841AEBF0F000BCE633 /* LaunchScreen.xib */; };
 		96E358921AEBF0F000BCE633 /* Ejemplo01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E358911AEBF0F000BCE633 /* Ejemplo01Tests.m */; };
+		96E358A01AEC02D000BCE633 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3589F1AEC02D000BCE633 /* Tweet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		96E3588B1AEBF0F000BCE633 /* Ejemplo01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ejemplo01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E358901AEBF0F000BCE633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E358911AEBF0F000BCE633 /* Ejemplo01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ejemplo01Tests.m; sourceTree = "<group>"; };
+		96E3589E1AEC02D000BCE633 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tweet.h; path = models/Tweet.h; sourceTree = SOURCE_ROOT; };
+		96E3589F1AEC02D000BCE633 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tweet.m; path = models/Tweet.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		96E358741AEBF0EF00BCE633 /* Ejemplo01 */ = {
 			isa = PBXGroup;
 			children = (
+				96E358A11AEC030600BCE633 /* models */,
 				96E358791AEBF0EF00BCE633 /* AppDelegate.h */,
 				96E3587A1AEBF0EF00BCE633 /* AppDelegate.m */,
 				96E3587C1AEBF0EF00BCE633 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				96E358901AEBF0F000BCE633 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E358A11AEC030600BCE633 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				96E3589E1AEC02D000BCE633 /* Tweet.h */,
+				96E3589F1AEC02D000BCE633 /* Tweet.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				96E3587E1AEBF0EF00BCE633 /* ViewController.m in Sources */,
 				96E3587B1AEBF0EF00BCE633 /* AppDelegate.m in Sources */,
 				96E358781AEBF0EF00BCE633 /* main.m in Sources */,
+				96E358A01AEC02D000BCE633 /* Tweet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +432,7 @@
 				96E358971AEBF0F000BCE633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96E358981AEBF0F000BCE633 /* Build configuration list for PBXNativeTarget "Ejemplo01Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +441,7 @@
 				96E3589A1AEBF0F000BCE633 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
